@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: black;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.mini-hero-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  justify-content: center;
+  
+}
+.hero-title {
+  font-size: 100px;
+  font-weight: 800;
+  color: white;
+  justify-content: center;
+  
+}
+.hero {
+  width: 100%;
+  justify-content: center;  /* because BlurText uses display:flex */
+  text-align: center;
+}
+
+/* ===== CONTACT SECTION (React Bits Style) ===== */
+
+.contact-section {
+  background: #050510;
+  padding: 120px 20px;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.contact-subtitle {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.contact-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 22px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: rgba(255, 255, 255, 0.10);
+  transform: translateY(-3px);
+}
+
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ff6a;
+  box-shadow: 0 0 10px #00ff6a;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 6px #00ff6a;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.4;
+    box-shadow: 0 0 16px #00ff6a;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 6px #00ff6a;
+  }
+}
+/*................................. Project section ...............................*/
+.pCard {
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+.pCard h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.pCard p {
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.pCard.blue { background: #59B3FE; }
+.pCard.purple { background: #FEFE20; }
+.pCard.green { background: #13A789; }
+.pCard.pink { background: #FF5447; }
+.project-toptext {
+  font-size: 25px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  margin: 0;
+   font-family: "Space Mono", monospace;
+   text-align: right;}
+
+  .project-topbar {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-bottom: 50px;
+
+  /* IMPORTANT */
+  display: flex;
+  justify-content: flex-start;
+}
+/*......................... about section ................*/
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  padding: 80px 60px;
+}
+.about-topbar {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-bottom: 50px;
+
+  /* IMPORTANT */
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.about-toptext {
+  font-size: 14px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  margin: 0;
+   font-family: "Space Mono", monospace;
+   text-align: right;
+}
+.about-title {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 900px;
+
+  /* IMPORTANT */
+  text-align: left;
+  margin: 0;
+}
+
+.about-topbar_1 {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-bottom: 50px;
+
+  /* IMPORTANT */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*.............. Contact section/................... */
+.contact-section {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  padding: 80px 60px;
+}
+
+
+/* top horizontal line */
+.contact-topbar {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-bottom: 50px;
+
+  /* IMPORTANT */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* . say hello */
+.contact-toptext {
+  font-size: 14px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  margin: 0;
+   font-family: "Space Mono", monospace;
+   text-align: left;
+}
+
+/* big left text */
+.contact-title {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 900px;
+
+  /* IMPORTANT */
+  text-align: left;
+  margin: 0;
+}
+.contact-topbar_1 {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-bottom: 50px;
+
+  /* IMPORTANT */
+  display: flex;
+  justify-content: flex-start;
+}
+
